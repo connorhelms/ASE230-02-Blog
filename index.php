@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 $jsonData = file_get_contents('posts.json');
 $blogPosts = json_decode($jsonData, true);
 
@@ -15,29 +14,6 @@ function sortPostsByDate($a, $b) {
 
 uasort($blogPosts, 'sortPostsByDate');
 
-=======
-$blogPosts = [
-    [
-        'title' => 'Team Member 1',
-        'content' => 'I am the first team member. I am working alone so I just used 2 UFC fighters as placeholders.',
-        'author' => 'Connor Helms',
-        'date' => '2024-09-17'
-    ],
-    [
-        'title' => 'Team Member 2',
-        'content' => 'Charles Oliveira is the second team member. He is a UFC fighter and a former world champion. He is fighting Michael Chandler in december as the co-main event.',
-        'author' => 'Charles Oliveira',
-        'date' => '2024-09-17'
-    ],
-    [
-        'title' => 'Team Member 3',
-        'content' => 'Khalil Rountree is the third team member. He is a UFC fighter and has a UFC lightheavyweight title fight coming up.',
-        'author' => 'Khalil Rountree',
-        'date' => '2024-09-17'
-    ],
-    // You can add more blog posts here
-];
->>>>>>> a55a4bccbaf8483962348f8d61ef370d8c7bb7a5
 ?>
 
 <!DOCTYPE html>
